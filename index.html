@@ -19,7 +19,7 @@ body{
 }
 header{
     /* border: solid red; */
-    width: 413px;
+    width: 400px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@ header h2{
 
 nav{
     /* border: solid green; */
-    width: 413px;
+    width: 400px;
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -71,6 +71,14 @@ nav ul{
     margin-right: 15px;
 }
 
+nav ul li a:hover{
+    background-color: greenyellow;
+}
+
+nav ul li a:active{
+    background-color: greenyellow;
+}
+
 nav ul li{
     /* border: solid red 0.5px; */
     width: 100%;
@@ -96,7 +104,7 @@ nav ul li a{
 
 main{
     /* border: solid red 0.8px; */
-    width: 413px;
+    width: 400px;
     height: 100%;
     padding: 5px 5px 5px 5px;
 }
@@ -133,7 +141,7 @@ main section div{
 }
 footer{
     /* border: solid red 0.5px; */
-    width: 413px;
+    width: 400px;
     height: 65px;
     background-color: rgb(183, 185, 187);
     display: flex;
@@ -196,7 +204,7 @@ footer ul li a img:active{
 
     <!-- start nav -->
     <nav>
-        <img src="https://toppng.com/uploads/preview/home-icon-silhouette-vector-icon-house-svg-11553430238j2yumqqjz8.png" alt="profile">
+        <img src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/348467991_793001092216264_2845691108509562342_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGd-5aw68UTWXKNa6Uw5WXf-UCdCxfjF2L5QJ0LF-MXYo4GGwwlRtKH5AiQ83eKFQ2hPq0k3TlB-Y95k8hbMJYL&_nc_ohc=tHlGo6WKl8UAX-TLgh7&_nc_ht=scontent.fcnx4-1.fna&oh=00_AfB75GFRLFTpMv6ChbELoxLAIWyeKf-KBLEDy_1Tl05nFA&oe=65777E1B" alt="profile">
 
         <ul>
             <li>
@@ -258,11 +266,22 @@ footer ul li a img:active{
     <footer>
         <ul>
             <li>
-                <a href="#"><img src="https://icons.veryicon.com/png/o/miscellaneous/template-4/telephone-contact-1.png" alt="contect"></a>
-                <a href="#"><img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/home_circle_icon_137496.png" alt="home"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/About_icon_%28The_Noun_Project%29.svg/2048px-About_icon_%28The_Noun_Project%29.svg.png" alt="support"></a>
+                <a href="#" onclick="showAlert()"><img src="https://icons.veryicon.com/png/o/miscellaneous/template-4/telephone-contact-1.png" alt="contect"></a>
+                <a href="https://sengzarm.github.io/Hello/"><img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/home_circle_icon_137496.png" alt="home"></a>
+                <a href="#" onclick="support()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/About_icon_%28The_Noun_Project%29.svg/2048px-About_icon_%28The_Noun_Project%29.svg.png" alt="support"></a>
             </li>
         </ul>
     </footer>
+
+    <script>
+
+        function showAlert() {
+            alert("FB-Seng Zarm \nTikTok-CEO M \nYoutube-");
+        }
+
+        function support() {
+            alert("မႂ်ႇသုင်ၶႃႈ ငိၼ်းလီႁပ်ႉတွၼ်ႈယူႇၶႃႈဢေႃႈ \n \n ၽူႈသၢင်ႈ - သႅင်ၸၢမ်ႇ \n သၢင်ႈမိူဝ်ႈ - 20024 \n ယိူင်းဢၢၼ်း - တႃႇလဵပ်ႈႁဵၼ်း");
+        }
+    </script>
 </body>
 </html>
