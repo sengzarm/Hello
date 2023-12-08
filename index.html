@@ -3,451 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day One</title>
+    <title>OneNight</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: dodgerblue;
-           
-        }
-
-        header{
-            /* border: solid red; */
-            width: 412px;
-            height: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            background-color: rgb(255, 255, 255);
-            position: sticky;
-            top: 0px;
-        }
-
-        header h2{
-            margin-left: 10px;
-            margin-bottom: 6px;
-        }
-
-        header img{
-            border: solid red 0.5px;
-            width: 35px;
-            height: 35px;
-            border-radius: 50px;
-            margin-right: 15px;
-            margin-bottom: 6px;
-        }
-
-        nav{
-            /* border: solid red 0.8px; */
-            width: 407px;
-            height: 150px;
-            margin: 5px 5px;
-            background-color: aliceblue;
-            
-        }
-
-        nav .nav1{
-            width: 100%;
-            height: 100%;
-        }
-
-        .slide {
-            display: none;
-        }
-        img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .section1{
-            width: 407px;
-            height: 95px;
-            display: flex;
-            margin-left: 6px;
-            padding: 5px 5px 5px 5px;
-            justify-content: space-between;
-            background-color: aliceblue;
-        }
-
-        .section1 img{
-            border: solid rebeccapurple 0.8;
-            width: 85px;
-            height: 85px;
-            border-radius: 0px 0px 30px;
-            box-shadow: 0 2px 5px;
-        }
-
-        .section1 p{
-            /* border: solid red; */
-            width: 180px;
-            padding: 5px;
-            justify-content: space-around;
-        }
-
-        .section2{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            background-color: bisque;
-        }
-
         
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 60px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: red;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
-        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        #myBtn:hover {
-            background-color: #555;
-        }
+body{
+    overflow-y: auto;
+    background-color: rgb(0, 255, 255);
+}
+header{
+    /* border: solid red; */
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    position: sticky;
+    top: 0px;
+}
 
-        .section{
-            width: 100%;
-            height: 29.4px;
-            background-color: rgb(255, 0, 0);
-            /* border-radius: 20px 0px 0px 20px; */
-        }
+header h2{
+    /* border: solid blue; */
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .section button{
-            border-radius: 0px 0px 20px 0px;
-            width: 100px;
-            background-color: black;
-            color: wheat; 
-        }
-        
-        .divone{
-            width: 407px;
-            height: 470px;
-            background-color: aliceblue;
-            margin: 5px 5px;
-            border-radius: 20px;
-            padding: 3px 3px 3px 3px;
-        }
+nav{
+    /* border: solid green; */
+    width: 400px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(153, 142, 142);
+}
 
-        
-        
-        main{
-            width: 400px;
-            height: 60px;
-            margin: 0px 0px;
-            background-color: aliceblue;
-            border-radius: 20px 20px 20px 20px; 
-            padding: 3px 3px 3px 3px;
-            display: flex;
-            justify-content: space-evenly;
-            
-        }
-        .one{
-            /* border: solid red 0.5px; */
-            border-radius: 0px;
-            width: 80px;
-            height: 50px;
-            box-shadow: 0px 2px 4px;
-        }
+nav img{
+    /* border: solid red 0.5px; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    border-radius: 50px;
+    box-shadow: 0 3px 5px;
+}
 
-        footer{
-            background-color: rgb(255, 255, 255);
-            width: 412px;
-            height: 53px;
-            display: flex;
-            justify-content: space-evenly;
-            position: sticky;
-            bottom: 0px;
-            box-shadow: 0 13px 17px 13px;
-            magin-left: -6px;
-            
-        }
+nav ul{
+    /* border: solid rgb(0, 0, 0) 0.5px; */
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
 
-        footer ul{
-            display: flex;
-            /* border: solid red; */
-            width: 295px;
-            height: 50px;
-            
-        }
+nav ul li{
+    /* border: solid red 0.5px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-        footer ul li {
-            display: flex;
-            width: 295px;
-            height: 50px;
-            justify-content: space-evenly;
-        }
-        
-        
+nav ul li a{
+    display: flex;
+    /* border: solid red 00.5px; */
+    width: 70px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 3px 5px;
+    border-radius: 0 3px 5px;
+    background-color: aliceblue;
+}
 
-        footer ul li a img{
-            display: flex;
-            /* border: solid blue; */
-            width: 35px;
-            height: 35px;
-            align-items: center;
-            border-radius: 50px;
-            margin-top: 5px;
-        }
+main{
+    /* border: solid red 0.8px; */
+    width: 400px;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+}
 
-        footer ul li a img:active{
-            display: flex;
-            box-shadow: 0 4px 8px blue;
-        }
+main .one{
+    border: solid black;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
 
+main section{
+    border: solid black;
+    width: 100%;
+    height: 200px;
+    
+}
+
+main section iframe{
+    width: 100%;
+    height: 80%;
+}
+
+main section div{
+    /* border: solid red 0.5px; */
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-top: -2px;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.733));
+}
+footer{
+    /* border: solid red 0.5px; */
+    width: 400px;
+    height: 65px;
+    background-color: rgb(183, 185, 187);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    box-shadow: 0 4px 16px 4px;
+}
+
+footer ul{
+    /* border: solid red 0.5px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li{
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li a{
+    /* border: solid green; */
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li a img{
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    object-fit: contain;
+    box-shadow: 0 1px 3px black;
+}
+
+footer ul li a img:active{
+    background-color: rgb(139, 139, 139);
     
 
+}
     </style>
 </head>
 <body>
     <header>
-        <h2>Day One</h2>
-
-        <img src="#" alt="profile">
+        <h2>ONE NIGHT</h2>
     </header>
     <!-- end header -->
-    <!-- end header -->
-    
-    <!-- start nav -->
+
     <!-- start nav -->
     <nav>
-        <div class="nav1">
-            <div class="slide-container">
-                <div class="slide fade">
-                    <img src="https://imgix.ranker.com/list_img_v2/3370/363370/original/363370-u1">
-                </div>
-                <div class="slide fade">
-                    <img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/05/best-animated-movies-cover_800.png">
-                </div>
-                <div class="slide fade">
-                    <img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/disney-animated-movies-cover_800.png" alt="Image 3">
-                </div>
-                <div class="slide fade">
-                    <img src="https://movies.sterkinekor.co.za/CDN/media/entity/get/FilmTitleGraphic/HO00002734?referenceScheme=HeadOffice&allowPlaceHolder=true" alt="Image 3">
-                </div>
-                <div class="slide fade">
-                    <img src="https://jenifershop.com/wp-content/uploads/2021/05/il_fullxfull.2351874291_44km-scaled-1-1366x2048.jpg" alt="Image 3">
-                </div>
-                <div class="slide fade">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/best-netflix-animation-transylvania-1585679626.jpg" alt="Image 3">
-                </div>
-            </div>  
-        </div>
+        <img src="https://toppng.com/uploads/preview/home-icon-silhouette-vector-icon-house-svg-11553430238j2yumqqjz8.png" alt="profile">
+
+        <ul>
+            <li>
+                <a href="#">Youtube</a>
+                <a href="#">Facebook</a>
+                <a href="#">Tiktok</a>
+            </li>
+        </ul>
     </nav>
 
-    <div class="section1">
-        <img src="https://scontent.fbkk12-5.fna.fbcdn.net/v/t39.30808-6/348467991_793001092216264_2845691108509562342_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGd-5aw68UTWXKNa6Uw5WXf-UCdCxfjF2L5QJ0LF-MXYo4GGwwlRtKH5AiQ83eKFQ2hPq0k3TlB-Y95k8hbMJYL&_nc_ohc=tHlGo6WKl8UAX-7RELX&_nc_ht=scontent.fbkk12-5.fna&oh=00_AfDWSDbC6s8fVatD2UW87cWm_hzeQRDRtSxdBcjVV2aK5A&oe=657583DB" alt="icon">
-        <p>
-            <strong>Name -</strong> <span style="color: rgb(76, 0, 255);"> Seng Zarm</span> <br>
-            <strong>Age -</strong> <span style="color: blue;"> 18 </span> <br>
-            <strong>Location -</strong> <span style="color: blue;"><a href="#" style="text-decoration: none;">Loi Tai Leng </a></span> <br>
-            <strong> Contect -</strong> <span style="color: blue;"><a href="#" style="text-decoration: none;">FaceBook</a> </span>
-        </p>
-    </div>
+    <main>
+        <div class="one">
 
-    
+        </div>
 
-
-    <div class="divone">
-        <main>
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <main>
-             
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        </section>
+
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <main>
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        </section>
+
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <main>
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        </section>
+
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <main>
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        </section>
+
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <main>
-            
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
-            </div>  
-    
-            <div class="one">
-                <a href="#"></a>
+        </section>
+
+        <section>
+            <iframe src="" frameborder="0"></iframe>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </main> 
-        <footer>
-            <ul>
-                <li>
-                    <a href="#"><img src="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-calling-telephone-line-icon-vector-png-image_1885981.jpg" alt=""></a>
-                    <a href="#"><img src="https://w7.pngwing.com/pngs/848/762/png-transparent-computer-icons-home-house-home-angle-building-rectangle-thumbnail.png" alt=""></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5269/5269933.png" alt=""></a>
-                </li>
-            </ul>
-        </footer>
-    </div>
-     
-    
+        </section>
+    </main>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-
-
-    <!-- start script -->
-    <!-- start script -->
-    <!-- start script -->
-    
-    <script>
-        var slideIndex = 0;
-        showSlides();
-    
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slide");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-
-
-        // Back to top
-        // Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-    // Start Accordion
-    // Start Accordion
-    // Start Accordion
-    var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-     </script>
+    <footer>
+        <ul>
+            <li>
+                <a href="#"><img src="https://icons.veryicon.com/png/o/miscellaneous/template-4/telephone-contact-1.png" alt="contect"></a>
+                <a href="#"><img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/home_circle_icon_137496.png" alt="home"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/About_icon_%28The_Noun_Project%29.svg/2048px-About_icon_%28The_Noun_Project%29.svg.png" alt="support"></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
