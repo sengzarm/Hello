@@ -3,195 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneNight</title>
+    <title>Xcode</title>
+    <link rel="icon" href="#">
     <!-- <link rel="stylesheet" href="index.css"> -->
+
     <style>
-        
-*{
+        *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    overflow-y: auto;
-    background-color: rgb(0, 255, 255);
-}
-header{
-    /* border: solid red; */
-    width: 414px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    position: sticky;
-    top: 0px;
-}
+@media screen and (min-width: 295px){
 
-header h2{
-    /* border: solid blue; */
-    width: 200px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    body{
+        overflow: auto;
+    }
+    header{
+        /* border: solid red 0.5px; */
+        width: 100%;
+        height: 45px;
+        display: flex;
+        padding: 5px 5px 5px 5px;
+        justify-content: start;
+        align-items: end;
+        background-color: rgb(46, 47, 48);
+        box-shadow: 0 0px 10px white;
+    }
 
-nav{
-    /* border: solid green; */
-    width: 414px;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(153, 142, 142);
-}
+    header h2{
+        /* border: solid blue; */
+        width: 20px;
+        height: 20px;
+        display: flex;
+        color: red;
+        margin-left: 15px;
+    }
 
-nav img{
-    /* border: solid red 0.5px; */
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 35px;
-    border-radius: 50px;
-    box-shadow: 0 3px 5px;
-}
+    header h3{
+        display: flex;
+        color: aliceblue;
+        margin-left: 1px;
+        height: 18px;
+    }
 
-nav ul{
-    /* border: solid rgb(0, 0, 0) 0.5px; */
-    width: 220px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-}
+    nav{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 120px;
+        padding: 10px 10px 10px 10px;
+    }
 
-nav ul li a:hover{
-    background-color: greenyellow;
-}
+    nav .ads{
+        border: solid blanchedalmond;
+        width: 100%;
+        height: 100%;
+    }
 
-nav ul li a:active{
-    background-color: greenyellow;
-    transform: 0.3s;
-}
+    .scoll{
+        border: solid white 0.5px;
+        width: 100%;
+        height: 120px;
+        padding: 10px 10px 10px 10px;
+    }
 
-nav ul li{
-    /* border: solid red 0.5px; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav ul li a{
-    display: flex;
-    /* border: solid red 00.5px; */
-    width: 70px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 3px 5px;
-    border-radius: 0 3px 5px;
-    background-color: aliceblue;
-}
-
-main{
-    /* border: solid red 0.8px; */
-    width: 414px;
-    height: 100%;
-    padding: 5px 5px 5px 5px;
-}
-
-main .one{
-    border: solid black;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-main section{
-    border: solid black;
-    width: 100%;
-    height: 200px;
+    .scoll_cover{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
     
+    main{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    main section{
+        border: solid green 0.5px;
+        width: 100%;
+        height: 155px;
+        margin-bottom: 7px;
+        overflow: hidden;
+    }
+
+    main section iframe{
+        /* border: solid red; */
+        width: 272px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    footer{
+        /* border: solid wheat; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(46, 47, 48);
+        position: sticky;
+        bottom: 0px;
+        box-shadow: 0 10px 13px 4px white;
+    }
+
+    footer a{
+        /* border: solid red 0.7px; */
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        text-decoration: none;
+        font-size: 25px;
+        text-shadow: 0 2px 12px;
+    }
+
+    
+
 }
 
-main section iframe{
-    width: 100%;
-    height: 80%;
-}
+@media screen and (min-width: 415px){
 
-main section div{
-    /* border: solid red 0.5px; */
-    width: 100%;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    margin-top: -2px;
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.733));
-}
-footer{
-    /* border: solid red 0.5px; */
-    width: 414px;
-    height: 65px;
-    background-color: rgb(183, 185, 187);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    bottom: 0px;
-    box-shadow: 0 4px 16px 4px;
-}
+    body{
+        overflow: auto;
+    }
+    header{
+        /* border: solid red 0.5px; */
+        width: 100%;
+        height: 45px;
+        display: flex;
+        padding: 5px 5px 5px 5px;
+        justify-content: start;
+        align-items: end;
+        background-color: rgb(46, 47, 48);
+        box-shadow: 0 0px 10px white;
+    }
 
-footer ul{
-    /* border: solid red 0.5px; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    header h2{
+        /* border: solid blue; */
+        width: 20px;
+        height: 20px;
+        display: flex;
+        color: red;
+        margin-left: 15px;
+    }
 
-footer ul li{
-    /* border: solid red; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    header h3{
+        display: flex;
+        color: aliceblue;
+        margin-left: 1px;
+        height: 18px;
+    }
 
-footer ul li a{
-    /* border: solid green; */
-    display: flex;
-    width: 50px;
-    height: 50px;
-    justify-content: space-around;
-    align-items: center;
-}
+    nav{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 120px;
+        padding: 10px 10px 10px 10px;
+    }
 
-footer ul li a img{
-    /* border: solid red; */
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    display: flex;
-    object-fit: contain;
-    box-shadow: 0 1px 3px black;
-}
+    nav .ads{
+        border: solid blanchedalmond;
+        width: 100%;
+        height: 100%;
+    }
 
-footer ul li a img:active{
-    background-color: rgb(139, 139, 139);
+    .scoll{
+        border: solid white 0.5px;
+        width: 100%;
+        height: 120px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .scoll_cover{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    main{
+        border: solid red 0.5px;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    main section{
+        border: solid green 0.5px;
+        width: 100%;
+        height: 155px;
+        margin-bottom: 7px;
+        overflow: hidden;
+    }
+
+    main section iframe{
+        /* border: solid red; */
+        width: 272px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    footer{
+        /* border: solid wheat; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(46, 47, 48);
+        position: sticky;
+        bottom: 0px;
+        box-shadow: 0 10px 13px 4px white;
+    }
+
+    footer a{
+        /* border: solid red 0.7px; */
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        text-decoration: none;
+        font-size: 25px;
+        text-shadow: 0 2px 12px;
+    }
+
     
 
 }
@@ -199,90 +245,39 @@ footer ul li a img:active{
 </head>
 <body>
     <header>
-        <h2>ONE NIGHT</h2>
+        <h2>X</h2>
+        <h3>code</h3>
     </header>
-    <!-- end header -->
 
-    <!-- start nav -->
     <nav>
-        <img src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/348467991_793001092216264_2845691108509562342_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGd-5aw68UTWXKNa6Uw5WXf-UCdCxfjF2L5QJ0LF-MXYo4GGwwlRtKH5AiQ83eKFQ2hPq0k3TlB-Y95k8hbMJYL&_nc_ohc=tHlGo6WKl8UAX-TLgh7&_nc_ht=scontent.fcnx4-1.fna&oh=00_AfB75GFRLFTpMv6ChbELoxLAIWyeKf-KBLEDy_1Tl05nFA&oe=65777E1B" alt="profile">
-
-        <ul>
-            <li>
-                <a href="#">Youtube</a>
-                <a href="#">Facebook</a>
-                <a href="#">Tiktok</a>
-            </li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="one">
+        <div class="ads">
 
         </div>
+    </nav>
 
+    <div class="scoll">
+        <div class="scoll_cover">
+            
+        </div>
+    </div>
+
+    <main>
         <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
+            <iframe src="https://www.youtube.com/embed/G_AEL-Xo5l8?si=e1BlsEDc_Rr_IWCC" frameborder="0" controls autoplay></iframe>
         </section>
 
         <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
+            <iframe src="https://www.youtube.com/embed/G_AEL-Xo5l8?si=e1BlsEDc_Rr_IWCC" frameborder="0" controls autoplay></iframe>
         </section>
 
         <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-        </section>
-
-        <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-        </section>
-
-        <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-        </section>
-
-        <section>
-            <iframe src="" frameborder="0"></iframe>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
+            <iframe src="https://www.youtube.com/embed/G_AEL-Xo5l8?si=e1BlsEDc_Rr_IWCC" frameborder="0" controls autoplay></iframe>
         </section>
     </main>
-
     <footer>
-        <ul>
-            <li>
-                <a href="#" onclick="showAlert()"><img src="https://icons.veryicon.com/png/o/miscellaneous/template-4/telephone-contact-1.png" alt="contect"></a>
-                <a href="https://sengzarm.github.io/Hello/"><img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/home_circle_icon_137496.png" alt="home"></a>
-                <a href="#" onclick="support()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/About_icon_%28The_Noun_Project%29.svg/2048px-About_icon_%28The_Noun_Project%29.svg.png" alt="support"></a>
-            </li>
-        </ul>
+        <a href="#"><strong>💌</strong></a>
+        <a href="#"><strong>💬</strong></a>
+        <a href="#"><strong>🤍</strong></a>
     </footer>
-
-    <script>
-
-        function showAlert() {
-            alert("FB-Seng Zarm \nTikTok-CEO M \nYoutube-");
-        }
-
-        function support() {
-            alert("မႂ်ႇသုင်ၶႃႈ ငိၼ်းလီႁပ်ႉတွၼ်ႈယူႇၶႃႈဢေႃႈ \n \n ၽူႈသၢင်ႈ - သႅင်ၸၢမ်ႇ \n သၢင်ႈမိူဝ်ႈ - 20024 \n ယိူင်းဢၢၼ်း - တႃႇလဵပ်ႈႁဵၼ်း");
-        }
-    </script>
 </body>
 </html>
